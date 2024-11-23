@@ -1,1 +1,28 @@
-test
+#include <iostream>
+
+int main() {
+    double number;        // Variable to store the current input
+    double sum = 0.0;     // Variable to keep the running total
+
+    std::cout << "Enter numbers to add (enter 0 to stop):" << std::endl;
+
+    while (true) {
+        std::cout << "Enter a number: ";
+        std::cin >> number;
+
+        // Check for termination condition
+        if (number == 0) {
+            break;
+        }
+
+        // Add the number to the total sum
+        sum += number;
+    system("cls");
+        // Display the current sum
+        std::cout << "Current total: " << sum << std::endl;
+    }
+
+    std::cout << "Final total: " << sum << std::endl;
+
+    return 0;
+}
